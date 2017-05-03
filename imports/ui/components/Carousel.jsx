@@ -5,6 +5,24 @@ export default class Carousel extends Component {
     super(props);
   }
 
+  slider() {
+    return [
+      {},
+      {},
+      {},
+      {},
+      {},
+    ]
+  }
+
+  renderSlider() {
+    return this.slider().map(() => {
+      return (
+        
+      )
+    })
+  }
+
   thumbnails() {
     return [
       {_id:1, label: "The Labbel Used", src:'http://placehold.it/900x500?text=1'},
@@ -18,7 +36,7 @@ export default class Carousel extends Component {
   renderThumbnails() {
     return this.thumbnails().map((thumbnail) => {
       return (
-        <div className="col-md-4">
+        <div className="col-md-4" key={thumbnail._id}>
           <div className="thumbnail" key={thumbnail._id}>
             <img src={thumbnail.src} />
             <div className="caption">
