@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 
 export default class Carousel extends Component {
-  constructor(props){
-    super(props);
-  }
-
   componentDidMount() {
-    $('.carousel').carousel({ interval: 1500 });
+    $('.carousel').carousel({ interval: 2000 });
   }
 
   slides() {
@@ -19,12 +15,22 @@ export default class Carousel extends Component {
     ]
   }
 
+  renderIndicators() {
+    return this.slides().map(li => {
+      return (
+        <li data-target="#carousel" data-slide-to={li._id}></li>
+      );
+    })
+  }
+
   renderSlides() {
     return this.slides().map(slide => {
       return (
         <div className="item" key={slide._id}>
           <img className="slide-img" src={slide.src} />
-          <div className="carousel-caption"></div>
+          <div className="carousel-caption">
+            <h3>{slide.caption}</h3>
+          </div>
         </div>
       );
     })
@@ -34,10 +40,16 @@ export default class Carousel extends Component {
   render() {
     return (
       <div id="carousel" className="carousel slide" data-ride="carousel">
+        <ol className="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" className="active"></li>
+          {this.renderIndicators()}
+        </ol>
         <div className="carousel-inner" role="listbox">
           <div className="item active">
             <img src="http://placehold.it/1440x500?text=0" />
-            <div className="carousel-caption"></div>
+            <div className="carousel-caption">
+              <h3>Slide 0</h3>
+            </div>
           </div>
           {this.renderSlides()}
         </div>
