@@ -5,23 +5,6 @@ export default class Carousel extends Component {
     super(props);
   }
 
-  slider() {
-    return [
-      {},
-      {},
-      {},
-      {},
-      {},
-    ]
-  }
-
-  renderSlider() {
-    return this.slider().map(() => {
-      return (
-        
-      )
-    })
-  }
 
   thumbnails() {
     return [
