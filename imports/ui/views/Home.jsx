@@ -6,10 +6,7 @@ export const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="container">
-        <h1>Home</h1>
-        <Carousel />
-      </div>
+      <Carousel />
     </div>
   );
 }
