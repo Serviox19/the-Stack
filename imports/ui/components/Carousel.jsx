@@ -18,7 +18,7 @@ export default class Carousel extends Component {
   renderIndicators() {
     return this.slides().map(li => {
       return (
-        <li data-target="#carousel" data-slide-to={li._id}></li>
+        <li data-target="#carousel" data-slide-to={li._id} key={li._id}></li>
       );
     })
   }
@@ -27,7 +27,7 @@ export default class Carousel extends Component {
     return this.slides().map(slide => {
       return (
         <div className="item" key={slide._id}>
-          <img className="slide-img" src={slide.src} />
+          <img className="slide-img img-fluid" src={slide.src} />
           <div className="carousel-caption">
             <h3>{slide.caption}</h3>
           </div>

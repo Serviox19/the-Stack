@@ -1,1 +1,4 @@
 node_modules/
+.DS_Store
+.meteor/.DS_Store
+imports/.DS_Store

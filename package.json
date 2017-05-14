@@ -1,5 +1,5 @@
 {
-  "name": "weVlogr_prep",
+  "name": "my_Stack",
   "private": true,
   "scripts": {
     "start": "meteor run"
