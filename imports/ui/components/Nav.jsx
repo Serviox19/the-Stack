@@ -23,7 +23,7 @@ class Navbar extends Component {
           </div>
           <div className="collapse navbar-collapse" id="nav-toggle">
             <ul className="nav navbar-nav">
-              <li><a href="#">Link</a></li>
+              <li><a href="javascript:void(0)">Link</a></li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
                 <li><a href="">Login</a></li>

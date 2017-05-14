@@ -3,20 +3,11 @@
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
-  top: 0;
+  z-index: 100;
   left: 0;
-  background-color: #E7E7E7;
+  background-color: #F8F8F8;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
-
-  .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
 
   .overlay-content {
     text-align: center;

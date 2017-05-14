@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classie from 'classie';
 
 class SideNav extends Component {
   constructor(props) {
@@ -7,23 +8,25 @@ class SideNav extends Component {
 
   componentDidMount() {
 
-    $('#side-nav-btn').on('click', function () {
-      $('.sideNav').css({ width: 250 });
-      $('#home-main').css({ marginLeft: 250 });
-    });
-    $('.closebtn').on('click', function () {
-      $('.sideNav').css({ width: 0 });
-      $('#home-main').css({ marginLeft: 0 });
+    let button = $('#side-nav-btn');
+    let sideNav = $('.sideNav');
+    let carousel = $('#carousel');
+
+    button.on('click', function () {
+      if (sideNav.css('width') == '0px') {
+        sideNav.css({ width: 250 });
+        carousel.css({ marginLeft: 250 });
+      } else if (sideNav.css('width') == '250px') {
+        sideNav.css({ width: 0 });
+        carousel.css({ marginLeft: 0 });
+      }
     });
   }
 
   render() {
     return (
       <div className="sideNav">
-        <a href="javascript:void(0)" className="closebtn">&times;</a><br />
         <div className="overlay-content">
-          <a href="">Link</a>
-          <a href="">Link</a>
           <a href="">Link</a>
         </div>
       </div>
