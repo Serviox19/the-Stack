@@ -6,20 +6,27 @@
   z-index: 100;
   left: 0;
   background-color: #F8F8F8;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  overflow-x: hidden;
 
   .overlay-content {
-    text-align: center;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     a {
-      padding: 8px 8px 8px 32px;
       text-decoration: none;
-      font-size: 25px;
-      color: #818181;
+      font-size: 20px;
+      color: #000;
       display: block;
       transition: 0.3s;
       text-align: center;
+      height: 40px;
+      padding: 5px 0;
+
+      &:hover {
+        background-color: #CC181E;
+        color: #FFF;
+      }
     }
   }
 

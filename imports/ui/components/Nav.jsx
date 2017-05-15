@@ -22,9 +22,6 @@ class Navbar extends Component {
             <a className="navbar-brand" href="/">Example App</a>
           </div>
           <div className="collapse navbar-collapse" id="nav-toggle">
-            <ul className="nav navbar-nav">
-              <li><a href="javascript:void(0)">Link</a></li>
-            </ul>
             <ul className="nav navbar-nav navbar-right">
                 <li><a href="">Login</a></li>
                 <li><a href="">Signup</a></li>

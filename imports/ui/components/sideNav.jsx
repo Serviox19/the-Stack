@@ -10,16 +10,22 @@ class SideNav extends Component {
 
     let button = $('#side-nav-btn');
     let sideNav = $('.sideNav');
-    let carousel = $('#carousel');
+    let homeDiv = $('#home-main');
+    let sideNavLink = $('.overlay-content a');
 
     button.on('click', function () {
       if (sideNav.css('width') == '0px') {
         sideNav.css({ width: 250 });
-        carousel.css({ marginLeft: 250 });
+        homeDiv.css({ marginLeft: 250 });
       } else if (sideNav.css('width') == '250px') {
         sideNav.css({ width: 0 });
-        carousel.css({ marginLeft: 0 });
+        homeDiv.css({ marginLeft: 0 });
       }
+    });
+
+    sideNavLink.on('click', function () {
+      sideNav.css({ width: 0 });
+      homeDiv.css({ marginLeft: 0 });
     });
   }
 
@@ -27,6 +33,8 @@ class SideNav extends Component {
     return (
       <div className="sideNav">
         <div className="overlay-content">
+          <a href="">Link</a>
+          <a href="">Link</a>
           <a href="">Link</a>
         </div>
       </div>
