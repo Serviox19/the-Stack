@@ -7,11 +7,11 @@ export default class Carousel extends Component {
 
   slides() {
     return [
-      {_id:1, caption: "Slide 1", src:'http://placehold.it/1440x500?text=1'},
-      {_id:2, caption: "Slide 2", src:'http://placehold.it/1440x500?text=2'},
-      {_id:3, caption: "Slide 3", src:'http://placehold.it/1440x500?text=3'},
-      {_id:4, caption: "Slide 4", src:'http://placehold.it/1440x500?text=4'},
-      {_id:5, caption: "Slide 5", src:'http://placehold.it/1440x500?text=5'}
+      {_id:1, caption: "Slide 2", src:'http://placehold.it/1440x500?text=2'},
+      {_id:2, caption: "Slide 3", src:'http://placehold.it/1440x500?text=3'},
+      {_id:3, caption: "Slide 4", src:'http://placehold.it/1440x500?text=4'},
+      {_id:4, caption: "Slide 5", src:'http://placehold.it/1440x500?text=5'},
+      {_id:5, caption: "Slide 6", src:'http://placehold.it/1440x500?text=6'}
     ]
   }
 
@@ -46,9 +46,9 @@ export default class Carousel extends Component {
         </ol>
         <div className="carousel-inner" role="listbox">
           <div className="item active">
-            <img src="http://placehold.it/1440x500?text=0" />
+            <img src="http://placehold.it/1440x500?text=1" />
             <div className="carousel-caption">
-              <h3>Slide 0</h3>
+              <h3>Slide 1</h3>
             </div>
           </div>
           {this.renderSlides()}
