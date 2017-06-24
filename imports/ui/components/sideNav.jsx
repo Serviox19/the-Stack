@@ -18,7 +18,6 @@ class SideNav extends Component {
         sideNav.css({ width: 250 });
         homeDiv.css({ marginLeft: 250 });
       } else if (sideNav.css('width') == '250px') {
-        $('.carousel').addClass('carousel-smaller');
         sideNav.css({ width: 0 });
         homeDiv.css({ marginLeft: 0 });
       }
