@@ -4,13 +4,12 @@
 @import "{}/imports/ui/sass/base/reset.scss";
 
 
-/*********************************
-   All Page Style Partials Here
-*********************************/
+/**************************************
+   All Base & Font Style Partials Here
+**************************************/
 
-@import "{}/imports/ui/sass/pages/home.scss";
-// @import "{}/imports/ui/sass/";
-
+@import "{}/imports/ui/sass/base/variables.scss";
+@import "{}/imports/ui/sass/fonts/fonts.scss";
 
 
 /*********************************
@@ -21,14 +20,12 @@
 @import "{}/imports/ui/sass/components/columns.scss";
 @import "{}/imports/ui/sass/components/sideNav.scss";
 
+/*********************************
+   All Page Style Partials Here
+*********************************/
 
+@import "{}/imports/ui/sass/pages/home.scss";
 
-/**************************************
-   All Base & Font Style Partials Here
-**************************************/
-
-@import "{}/imports/ui/sass/base/variables.scss";
-@import "{}/imports/ui/sass/fonts/fonts.scss";
 
 /**************************************
    All Responsive Style Partials Here
