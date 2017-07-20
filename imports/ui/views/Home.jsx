@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../../ui/components/nav';
 import SideNav from '../../ui/components/sideNav';
-import Carousel from '../../ui/components/carousel';
+import Slider from '../../ui/components/slider';
 import Column from '../../ui/components/column';
 
 export const Home = () => {
@@ -10,7 +10,7 @@ export const Home = () => {
       <Navbar />
       <SideNav />
       <div id="home-main">
-        <Carousel />
+        <Slider />
         <Column />
       </div>
     </div>

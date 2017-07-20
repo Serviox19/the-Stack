@@ -4,6 +4,13 @@
 @import "{}/imports/ui/sass/base/reset.scss";
 
 
+
+/*********************************
+   Vendor
+*********************************/
+
+
+
 /**************************************
    All Base & Font Style Partials Here
 **************************************/
@@ -19,6 +26,7 @@
 @import "{}/imports/ui/sass/components/carousel.scss";
 @import "{}/imports/ui/sass/components/columns.scss";
 @import "{}/imports/ui/sass/components/sideNav.scss";
+@import "{}/imports/ui/sass/components/swiper.scss";
 
 /*********************************
    All Page Style Partials Here
