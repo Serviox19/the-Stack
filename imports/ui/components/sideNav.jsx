@@ -14,18 +14,8 @@ class SideNav extends Component {
     let sideNavLink = $('.overlay-content a');
 
     button.on('click', function () {
-      if (sideNav.css('width') == '0px') {
-        sideNav.css({ width: 250 });
-        homeDiv.css({ marginLeft: 250 });
-      } else if (sideNav.css('width') == '250px') {
-        sideNav.css({ width: 0 });
-        homeDiv.css({ marginLeft: 0 });
-      }
-    });
-
-    sideNavLink.on('click', function () {
-      sideNav.css({ width: 0 });
-      homeDiv.css({ marginLeft: 0 });
+      sideNav.toggleClass('nav-toggled');
+      homeDiv.toggleClass('toggled');
     });
   }
 

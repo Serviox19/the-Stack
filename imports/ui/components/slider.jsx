@@ -11,7 +11,7 @@ export default class Slider extends Component {
       prevButton: '.swiper-button-prev',
       mousewheelControl: false,
       speed: 400,
-      spaceBetween: 100,
+      // spaceBetween: 100,
       autoplay: 2000
     });
   }
